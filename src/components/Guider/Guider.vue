@@ -6,7 +6,7 @@
           <div class="text-4xl">Neo</div>
           <div class="text-6xl">Memory</div>
         </div> 
-        <div class="flex flex-col">
+        <div class="flex flex-col select-none">
           <ul class="list-none py-6 text-2xl">
             <router-link to="/">
               <li>
@@ -16,14 +16,26 @@
             <li>
               <GuiderItem text="背单词"/>
               <ul>
-                <router-link to="/words/memorizing">
+                <router-link to="/words/excluding">
                   <li class="px-8">
-                    <GuiderItem text="新单词"/>
+                    <GuiderItem text="排单词"/>
                   </li>
                 </router-link>
-                <li class="px-8">
-                  <GuiderItem text="复习"/>
-                </li>
+                <router-link to="/words/memorizing">
+                  <li class="px-8">
+                    <GuiderItem text="记单词"/>
+                  </li>
+                </router-link>
+                <router-link to="/words/test/translate">
+                  <li class="px-8">
+                    <GuiderItem text="测翻译"/>
+                  </li>
+                </router-link>
+                <router-link to="/words/test/spell">
+                  <li class="px-8">
+                    <GuiderItem text="测拼写"/>
+                  </li>
+                </router-link>
               </ul>
             </li>
             <li>
