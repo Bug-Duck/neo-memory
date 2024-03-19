@@ -5,6 +5,7 @@ import Excluding from '../pages/Excluding.vue'
 import TestSpell from '../pages/TestSpell.vue'
 import TestTranslate from '../pages/TestTranslate.vue';
 import Login from '../pages/Login.vue'
+import Memories from '../pages/Memories.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -21,6 +22,13 @@ const router = createRouter({
       component: Login,
       meta: {
         title: '登录',
+      }
+    },
+    {
+      path: '/memories',
+      component: Memories,
+      meta: {
+        title: '背词卡',
       }
     },
     {

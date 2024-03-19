@@ -1,7 +1,7 @@
 <template>
   <section class="background fixed">
     <div class="flex flex-row">
-      <div class="px-10 py-10">
+      <div class="px-10 py-10 sticky">
         <Guider/>
       </div>
       <div class="px-10 py-10 w-full h-full">

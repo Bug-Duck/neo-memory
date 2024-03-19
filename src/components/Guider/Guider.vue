@@ -41,9 +41,11 @@
             <li>
               <GuiderItem text="计划"/>
             </li>
-            <li>
-              <GuiderItem text="背词卡"/>
-            </li>
+            <router-link to="/memories">
+              <li>
+                <GuiderItem text="背词卡"/>
+              </li>
+            </router-link>
             <li>
               <GuiderItem text="设置"/>
             </li>
